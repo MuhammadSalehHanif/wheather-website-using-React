@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* 🔹 dark overlay */
+    url("https://images.unsplash.com/photo-1501973801540-537f08ccae7b")
+    no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  text-align: center;
+  color: white;
+  width: 90%;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ff9f43;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #ff7849;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.city {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.temp {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.condition {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.weather-icon {
+  width: 100px;
+  margin: 10px auto;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+/* Mobile view */
+@media (max-width: 500px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+  }
+}
